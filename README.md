@@ -1,3 +1,19 @@
+# Masterarbeit zu Rumination und Hostility
+
+Dieser Fork übernimmt das SHK-Personality-Project von Franziska Suwita. Die ursprünglichen Skripte und Lizenzhinweise bleiben erhalten. Für diese Masterarbeit wird die Verarbeitung ergänzt und gesondert dokumentiert.
+
+## Einstieg in die neue Vorbereitung
+
+Lies zuerst [README_Embedding_Vorbereitung.md](README_Embedding_Vorbereitung.md). Die neue Datei `01_embeddings.py` prüft standardmäßig nur die lokale Excel-Datei. Eine Embedding-Berechnung erfordert später ausdrücklich `--berechnen`.
+
+Die Vorbereitung umfasst 53 reguläre Items mit 158 Varianten und einen getrennten neutralen Kontrolltext. In diesem Vorbereitungsschritt werden keine Embeddings erzeugt. SQuID-Zentrierung und Achsenprojektion folgen gesondert.
+
+Die benötigten Bibliotheken für die Ergänzung stehen in `requirements-embeddings.txt`. Die Herkunft, der festgehaltene Ausgangsstand und die Anpassungen stehen in [QUELLEN_UND_AENDERUNGEN.md](QUELLEN_UND_AENDERUNGEN.md). Die lokale Eingabedatei und Laufberichte werden durch `.gitignore` von der Veröffentlichung ausgenommen.
+
+## Ursprüngliche Projektbeschreibung
+
+Der folgende Abschnitt ist die übernommene Beschreibung des Ursprungsprojekts. Die darin genannten API-Schritte gehören zur ursprünglichen Gesamtpipeline. Die neue reine Embedding-Vorbereitung benötigt keine OpenAI- oder Gemini-API.
+
 # SHK-Personality-Project
 Project to assess Personality in a naturalistic paradigm 
 Dieses Projekt dokumentiert den vollständigen Prozess von der Vorbereitung psychometrischer Items über die semantische Validierung bis hin zur KI-basierten Generierung klinisch-relevanter Alltagsszenen.
@@ -69,3 +85,4 @@ Für die Ausführung werden folgende Bibliotheken benötigt:
     scikit-learn
 
     langdetect
+

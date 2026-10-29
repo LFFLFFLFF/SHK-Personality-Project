@@ -1,0 +1,23 @@
+# Lokale Fragebogenquellen und Eingabedateien
+data/*
+!data/README.md
+*.xlsx
+*.docx
+*.pdf
+
+# Laufdaten und gespeicherte Vektoren
+runs/
+*.npy
+*.npz
+
+# Python-Umgebung und Zwischendateien
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+
+# Lokale Zugangsdaten
+.env
+.env.*
