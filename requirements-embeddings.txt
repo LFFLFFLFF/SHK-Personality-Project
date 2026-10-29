@@ -1,0 +1,9 @@
+# Abhängigkeiten für den separaten Embedding-Schritt.
+# Dies ist eine Anforderungsliste, kein bereits getesteter vollständiger Lockfile.
+# Die tatsächlich installierten Versionen werden vom Skript im Laufprotokoll gespeichert.
+sentence-transformers>=3.4
+numpy>=1.26
+openpyxl>=3.1
+
+# PyTorch, Transformers, SciPy und weitere Laufzeitabhängigkeiten werden durch
+# sentence-transformers aufgelöst. OpenAI- und Gemini-Bibliotheken sind hierfür nicht nötig.

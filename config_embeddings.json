@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "input_file": "data/Itemdaten_mit_Kontrolltext.xlsx",
+  "item_sheet": "Items",
+  "item_table": "ItemsAugmentierung",
+  "control_sheet": "Kontrolltexte",
+  "control_table": "KontrolltexteTabelle",
+  "expected_items": 53,
+  "expected_variants": 158,
+  "expected_regular_texts": 211,
+  "expected_construct_counts": {"Rumination": 34, "Hostility": 19},
+  "expected_source_counts": {"C": 17, "B": 36},
+  "expected_control_count": 1,
+  "forbidden_item_ids": ["RRQ3"],
+  "expected_inverted_item_ids": [
+    "PID-5-131inv.",
+    "PID-5-177inv.",
+    "RRQ6inv.",
+    "RRQ9inv.",
+    "RRQ10inv."
+  ],
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "model_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "expected_embedding_dimension": 384,
+  "embedding_prompt": "",
+  "batch_size": 16,
+  "device": "cpu",
+  "output_dir": "runs",
+  "provenance": {
+    "upstream_repository": "https://github.com/franziskasuwita-glitch/SHK-Personality-Project",
+    "source_commit": "58f68d06f2ba2158e80ffdc90f155fd57d9eda5c",
+    "source_file": "Itemselection.py",
+    "source_blob_sha": "b4620749ab0c55f1743f0d9366934975368c1ee1",
+    "fork_repository": "https://github.com/LFFLFFLFF/SHK-Personality-Project",
+    "prepared_on": "2026-10-29"
+  }
+}
